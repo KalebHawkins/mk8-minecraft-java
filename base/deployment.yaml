@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minecraft-rsmc
+  name: minecraft-java
   labels:
     app: minecraft
     edition: java
@@ -20,9 +20,9 @@ spec:
       volumes:
         - name: mc-data
           persistentVolumeClaim:
-            claimName: minecraft-rsmc
+            claimName: minecraft-java
       containers:
-      - name: minecraft-rsmc
+      - name: minecraft-java
         image: docker.io/itzg/minecraft-server
         resources:
           requests:

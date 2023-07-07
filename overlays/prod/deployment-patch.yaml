@@ -1,32 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minecraft-rsmc
+  name: minecraft-java
 spec:
   template:
     metadata:
       labels:
         app: minecraft
-        edition: rsmc
+        edition: java
     spec:
       containers:
-      - name: minecraft-rsmc
+      - name: minecraft-java
+        image: docker.io/itzg/minecraft-server:java17
         env:
         - name: MEMORY
           value: "16G"
         - name: EULA
           value: "TRUE"
         - name: SERVER_NAME
-          value: KryoMine
+          value: RSMC
         - name: ALLOW_CHEATS
           value: "true"
         - name: LEVEL_NAME
-          value: kryotek
+          value: RSMC
         - name: VERSION
           value: "1.18.2"
-        - name: TYPE
-          value: "CURSEFORGE"
-        - name: CF_BASE_DIR
-          value: "/data"
-        - name: CF_SERVER_MOD
-          value: "RSMC_Official_1.0.0+0.5.0+921.zip"
+        - name: TPYE
+          value: FORGE
+        - name: FORGE_VERSION
+          value: "1.18.2-40.2.0"
