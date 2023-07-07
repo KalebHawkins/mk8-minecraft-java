@@ -8,6 +8,6 @@ spec:
     edition: java
   type: NodePort
   ports:
-    - protocol: UDP
+    - protocol: TCP
       port: 25565
       targetPort: 25565
