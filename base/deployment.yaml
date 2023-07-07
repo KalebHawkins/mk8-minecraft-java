@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minecraft-java
+  labels:
+    app: minecraft
+    edition: java
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minecraft
+      edition: java
+  template:
+    metadata:
+      labels:
+        app: minecraft
+        edition: java
+    spec:
+      volumes:
+        - name: mc-data
+          persistentVolumeClaim:
+            claimName: minecraft-java
+      containers:
+      - name: minecraft-java
+        image: docker.io/itzg/minecraft-server
+        resources:
+          requests:
+            memory: "16Gi"
+            cpu: "1500m"
+          limits:
+            memory: "16Gi"
+            cpu: 3000m
+        ports:
+        - containerPort: 19132
+          protocol: UDP
+        env:
+        - name: EULA
+          value: "TRUE"
+        volumeMounts:
+          - name: mc-data
+            mountPath: /data
