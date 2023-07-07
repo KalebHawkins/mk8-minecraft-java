@@ -26,5 +26,7 @@ spec:
           value: "1.18.2"
         - name: TYPE
           value: "CURSEFORGE"
+        - name: CF_BASE_DIR
+          value: "/data"
         - name: CF_SERVER_MOD
           value: "RSMC_Official_1.0.0+0.5.0+921.zip"
