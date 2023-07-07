@@ -30,4 +30,4 @@ spec:
         - name: FORGE_VERSION
           value: "1.18.2-40.2.0"
         - name: MODPACK
-          value: https://www.curseforge.com/minecraft/modpacks/rsmc-official/download/2349978/RSMC_Official_1.0.0+0.5.0+921.zip
+          value: "https://mediafilez.forgecdn.net/files/2349/978/RSMC_Official_1.0.0%2B0.5.0%2B921.zip"
