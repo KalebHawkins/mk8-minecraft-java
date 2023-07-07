@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minecraft-bedrock
+  name: minecraft-rsmc
 spec:
   template:
     metadata:
       labels:
         app: minecraft
-        edition: bedrock
+        edition: rsmc
     spec:
       containers:
-      - name: minecraft-bedrock
+      - name: minecraft-rsmc
         env:
         - name: MEMORY
           value: "16G"
