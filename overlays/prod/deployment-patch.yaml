@@ -30,4 +30,4 @@ spec:
         - name: FORGE_VERSION
           value: "1.18.2-40.2.0"
         - name: MODPACK
-          value: "https://www.curseforge.com/minecraft/mc-mods/rsmc-return-of-the-gods/download/4617102"
+          value: "https://mediafilez.forgecdn.net/files/4617/102/rsmc-0.15.6.jar"
