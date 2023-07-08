@@ -29,5 +29,5 @@ spec:
           value: FORGE
         - name: FORGE_VERSION
           value: "1.18.2-40.2.0"
-        - name: MODS_FILE
+        - name: MODS
           value: "https://mediafilez.forgecdn.net/files/4617/102/rsmc-0.15.6.jar"
