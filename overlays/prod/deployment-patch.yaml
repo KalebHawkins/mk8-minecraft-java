@@ -30,4 +30,4 @@ spec:
         - name: FORGE_VERSION
           value: "40.2.0"
         - name: MODS
-          value: https://mediafilez.forgecdn.net/files/4617/102/rsmc-0.15.6.jar,https://mediafilez.forgecdn.net/files/4181/370/geckolib-forge-1.18-3.0.57.jar
+          value: https://mediafilez.forgecdn.net/files/4617/102/rsmc-0.15.6.jar,https://mediafilez.forgecdn.net/files/4181/370/geckolib-forge-1.18-3.0.57.jar,https://mediafilez.forgecdn.net/files/4593/548/jei-1.18.2-forge-10.2.1.1005.jar
